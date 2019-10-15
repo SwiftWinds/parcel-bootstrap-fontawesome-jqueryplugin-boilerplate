@@ -18067,13 +18067,13 @@ module.hot.accept(reloadCSS);
 },{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"main.js":[function(require,module,exports) {
 "use strict";
 
+var _jquery = _interopRequireDefault(require("jquery"));
+
 require("bootstrap");
 
 require("bootstrap/dist/css/bootstrap.css");
 
 require("@fortawesome/fontawesome-free/css/all.css");
-
-var _jquery = _interopRequireDefault(require("jquery"));
 
 require("venobox/venobox/venobox.min");
 
@@ -18081,12 +18081,12 @@ require("venobox/venobox/venobox.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// Import precompiled Bootstrap css
+globalThis.jQuery = _jquery.default;
 (0, _jquery.default)(document).ready(function () {
   (0, _jquery.default)("#msgid").text("This is Hello World by JQuery");
   (0, _jquery.default)(".venobox").venobox();
 });
-},{"bootstrap":"node_modules/bootstrap/dist/js/bootstrap.js","bootstrap/dist/css/bootstrap.css":"node_modules/bootstrap/dist/css/bootstrap.css","@fortawesome/fontawesome-free/css/all.css":"node_modules/@fortawesome/fontawesome-free/css/all.css","jquery":"node_modules/jquery/dist/jquery.js","venobox/venobox/venobox.min":"node_modules/venobox/venobox/venobox.min.js","venobox/venobox/venobox.css":"node_modules/venobox/venobox/venobox.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"jquery":"node_modules/jquery/dist/jquery.js","bootstrap":"node_modules/bootstrap/dist/js/bootstrap.js","bootstrap/dist/css/bootstrap.css":"node_modules/bootstrap/dist/css/bootstrap.css","@fortawesome/fontawesome-free/css/all.css":"node_modules/@fortawesome/fontawesome-free/css/all.css","venobox/venobox/venobox.min":"node_modules/venobox/venobox/venobox.min.js","venobox/venobox/venobox.css":"node_modules/venobox/venobox/venobox.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -18114,7 +18114,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63067" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60892" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
